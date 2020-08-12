@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FullAlbum" representedClassName="FullAlbum" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="userId" attributeType="Integer 32" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="FullPhoto" representedClassName="FullPhoto" syncable="YES" codeGenerationType="class">
+        <attribute name="albumId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="downloadDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="thumbnailUrl" attributeType="String"/>
+        <attribute name="thumbnailUrlData" optional="YES" attributeType="Binary"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="url" attributeType="String"/>
+        <attribute name="urlData" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="FullUser" representedClassName="FullUser" syncable="YES" codeGenerationType="class">
+        <attribute name="city" attributeType="String"/>
+        <attribute name="companyBs" attributeType="String"/>
+        <attribute name="companyCatchPhrase" attributeType="String"/>
+        <attribute name="companyName" attributeType="String"/>
+        <attribute name="email" attributeType="String"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lat" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lng" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="phone" attributeType="String"/>
+        <attribute name="street" attributeType="String"/>
+        <attribute name="suite" attributeType="String"/>
+        <attribute name="username" attributeType="String"/>
+        <attribute name="website" attributeType="String"/>
+        <attribute name="zipcode" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="FullUser" positionX="0" positionY="126" width="128" height="268"/>
+        <element name="FullAlbum" positionX="45" positionY="288" width="128" height="88"/>
+        <element name="FullPhoto" positionX="81" positionY="297" width="128" height="163"/>
+    </elements>
+</model>

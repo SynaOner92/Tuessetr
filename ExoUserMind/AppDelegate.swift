@@ -8,14 +8,15 @@
 
 import UIKit
 import CoreData
+import Network
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
 
@@ -66,6 +67,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func saveContext () {
         let context = persistentContainer.viewContext
+
+        context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        
         if context.hasChanges {
             do {
                 try context.save()
@@ -78,5 +82,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-}
+    func isEntityAttributeExist(id: Int, entityName: String) -> Bool {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        
+        do {
+            let result = try managedContext.fetch(fetchRequest)
+            for data in result as! [NSManagedObject] {
+                if let idValue = data.value(forKey: "id") as? Int,
+                    idValue == id {
+                    
+                   return true
+                    
+                }
+            }
+        } catch {
+            
+        }
 
+        return false
+    }
+}
