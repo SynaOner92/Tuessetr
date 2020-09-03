@@ -312,14 +312,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "242CE649-2F35-479D-A5B6-2B5E63574202"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ExoUserMind/models/Photo.swift"
+            filePath = "ExoUserMind/Models/Photo.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "loadImage(for:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -328,15 +328,111 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "F98C3D69-9AC1-47BA-A7F9-A3B9D4EAD64D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExoUserMind/Models/Photo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "imageIsLoaded(imageType:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "743AA259-92C4-432C-975D-E072A75E5E9D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExoUserMind/Controllers/UserViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "dataUpdated()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88E5F62A-7B62-40E1-A93F-B0F38AFA8E7F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ExoUserMind/models/Photo.swift"
+            filePath = "ExoUserMind/Controllers/PhotoViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "imageIsLoaded(imageType:)"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "dataUpdated()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7DEEBF42-E4B3-42D3-AD25-ACB53D1F06C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExoUserMind/Services/CoreDataManagerService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "clearPhotosData(forAlbum:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7DEEBF42-E4B3-42D3-AD25-ACB53D1F06C7 - 2d01e11e15328a49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExoUserMind.CoreDataManagerService.clearPhotosData(forAlbum: Swift.Int) -&gt; ()"
+                  moduleName = "ExoUserMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nicolas/Documents/workspace/ExoUserMind/ExoUserMind/Services/CoreDataManagerService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "146"
+                  endingLineNumber = "146"
+                  offsetFromSymbolStart = "1913">
+               </Location>
+               <Location
+                  uuid = "7DEEBF42-E4B3-42D3-AD25-ACB53D1F06C7 - 2d01e11e15328a49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExoUserMind.CoreDataManagerService.clearPhotosData(forAlbum: Swift.Int) -&gt; ()"
+                  moduleName = "ExoUserMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nicolas/Documents/workspace/ExoUserMind/ExoUserMind/Services/CoreDataManagerService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "146"
+                  endingLineNumber = "146"
+                  offsetFromSymbolStart = "2312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C545EBE-BE3E-441F-AC26-041A0BACA230"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExoUserMind/Services/CoreDataManagerService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "clearPhotosData(forAlbum:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
